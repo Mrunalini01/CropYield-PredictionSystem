@@ -1,0 +1,40 @@
+<html>
+<head>
+<style>
+form{text-align:center}
+.center{
+margin: auto;
+width: 45%;
+border: 3px solid black;
+padding: 20px;
+}
+body {
+background-image: url({{url_for('static',filename='imagee.jfif')}});
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+input::-webkit-input-placeholder {
+font-size: 20px;
+}
+input[type=submit]{
+background-color: #4CAF50;
+}
+p{
+font-size: 40px;
+}
+</style>
+</head>
+<body bgcolor="#99ffdd">
+<center>
+<h1><b><br><br><font size=8>Predicted yield :</font></b></h1>
+<br><br><br>
+<h1>
+<font color="blue" size=10> 
+Predicted value {{ prediction }}
+</font>
+</h1>
+</center>
+</form>
+</body>
+</html>
